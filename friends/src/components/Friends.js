@@ -16,10 +16,17 @@ class Friends extends Component {
     return (
       <div>
         <h1>List of Friends</h1>
-        {console.log(this.props.friends)}
-        {this.props.friends.map(friend => {
-          return <li>{friend.name}</li>;
-        })}
+        <div className="all-friends-container">
+          {this.props.friends.map(friend => {
+            return (
+              <div className="friend-container">
+                <p className="friend-text">Name: {friend.name} </p>
+                <p className="friend-text">Age: {friend.age}</p>
+                <p className="friend-text">Email: {friend.email}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }
