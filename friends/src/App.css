@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.add-friend-form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.input {
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.add-friend-button {
+  margin-top: 10px;
+  height: 30px;
+  font-size: 20px;
+}
